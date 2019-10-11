@@ -1,0 +1,35 @@
+<?php
+if ($_GET) {
+	// menampilkan menu ?open
+	switch ($_GET['user']) {
+		// awal
+		case '':
+			if(!file_exists ($manager_dir.'manager_dashboard.php'))
+			die ("Filed tidak ada!");
+			include $manager_dir.'manager_dashboard.php'; break;
+
+		//pengalihan ketika sudah login
+		case 'login':
+			if(!file_exists ($manager_dir.'manager_dashboard.php'))
+			die ("File tidak ada!");
+			include $manager_dir.'manager_dashboard.php'; break;
+		case 'login_proses':
+			if(!file_exists ($manager_dir.'manager_dashboard.php'))
+			die ("File tidak ada!");
+			include $manager_dir.'manager_dashboard.php'; break;
+
+		// halaman utama admin
+		case 'manager_dashboard':
+			if(!file_exists ($manager_dir.'manager_dashboard.php'))
+			die ("File tidak ada!");
+			include $manager_dir.'manager_dashboard.php'; break;
+	}
+}
+else {
+	// halaman utama manager
+	if(!file_exists ($manager_dir.'manager_dashboard.php'))
+	die ("Filed tidak ada!");
+	include $manager_dir.'manager_dashboard.php';
+
+}
+?>

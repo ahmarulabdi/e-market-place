@@ -1,0 +1,8 @@
+#dvs_linear_horizontal{
+     background:#0F466E;
+     background:-webkit-linear-gradient(right,#0d0e0e 0%,#1f2224 75%);
+     background:-moz-linear-gradient(right,#161515 0%,#313437 75%);
+     background:-o-linear-gradient(right,#030e16 0%,#1b1f22 75%);
+     background:-ms-linear-gradient(right,#030e16 0%,#23272a 75%);
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#313639',endColorstr='#020b12',GradientType=1);
+}
